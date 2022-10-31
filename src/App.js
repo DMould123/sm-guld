@@ -13,7 +13,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          SM Guld
+          Winners - SM Guld
         </a>
       </header>
     </div>
