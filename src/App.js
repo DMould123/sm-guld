@@ -1,5 +1,15 @@
 import image from './image.jpg'
 import './App.css'
+import LogRocket from 'logrocket'
+LogRocket.init('eifezl/sm-guld')
+
+LogRocket.identify('eifezl/sm-guld', {
+  name: 'James Morrison',
+  email: 'jamesmorrison@example.com',
+
+  // Add your own custom user variables here, ie:
+  subscriptionType: 'pro'
+})
 
 function App() {
   return (
