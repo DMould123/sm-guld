@@ -1,6 +1,8 @@
+import React, { useState } from 'react'
 import image from './image.jpg'
 import './App.css'
 import LogRocket from 'logrocket'
+import { useSpeechSynthesis } from 'react-speech-kit'
 LogRocket.init('eifezl/sm-guld')
 
 LogRocket.identify('eifezl/sm-guld', {
@@ -12,6 +14,13 @@ LogRocket.identify('eifezl/sm-guld', {
 })
 
 function App() {
+  const [text, setText] = useState('')
+  const { speak } = useSpeechSynthesis()
+
+  const handleOnClick = () => {
+    speak({ text: text })
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -26,6 +35,20 @@ function App() {
           Winners - SM Guld
         </a>
       </header>
+      <textarea
+        className="textAreaStyle"
+        onChange={(e) => {
+          setText(e.target.value)
+        }}
+      ></textarea>
+      <button
+        className="buttonStyle"
+        onClick={() => {
+          handleOnClick()
+        }}
+      >
+        Listen
+      </button>
     </div>
   )
 }
