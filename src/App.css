@@ -1,46 +1,33 @@
-.App {
-  text-align: center;
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Global */
+body {
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.textAreaStyle {
+  width: 500px;
+  border-radius: 12px;
+  height: 163px;
+  border-width: 10px;
+  border-color: #e6521c;
+  margin-top: 25px;
+  margin-bottom: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-a {
-  color: gold;
-}
-
-p {
-  color: gold;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttonStyle {
+  padding: 10px;
+  border-radius: 11px;
+  font-weight: bold;
+  border-width: 4px;
+  margin-left: -334px;
+  border-color: #e6521c;
 }
